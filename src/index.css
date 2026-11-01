@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #030817;
+    color: #f8fafc;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-brand {
+    font-family: var(--font-display);
+  }
+}
+
+/* Glassmorphism & Cosmic Glow utility classes */
+.glass-panel {
+  background: rgba(10, 20, 44, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.glass-panel-elevated {
+  background: rgba(14, 27, 60, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: 0 10px 30px -10px rgba(22, 119, 255, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-button {
+  background: rgba(22, 119, 255, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-button:hover {
+  background: rgba(22, 119, 255, 0.28);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 15px rgba(22, 119, 255, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(22, 119, 255, 0.5);
+}
+
+.glow-blue-sm {
+  box-shadow: 0 0 12px rgba(22, 119, 255, 0.35);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.text-glow {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

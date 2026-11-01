@@ -1,0 +1,6 @@
+{
+  "name": "NOVA — Votre Univers Quotidien",
+  "description": "Application mobile futuriste premium tout-en-un avec assistant IA, météo en temps réel, shorts vidéo, lecteur musical spatial, espace scolaire, messagerie, agenda et notes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
